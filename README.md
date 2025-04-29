@@ -1,4 +1,4 @@
-﻿# VisionText-Explainr
+# VisionText-Explainr
 # VisionText Explainr 🧠🖼️
 
 A Flask-based web application that extracts text from **images or PDFs** using Tesseract OCR and provides a **simple AI-powered explanation** using Groq LLM.
@@ -22,35 +22,59 @@ A Flask-based web application that extracts text from **images or PDFs** using T
 ### 1. Clone the Repo
 
 ```bash
-git clone [https://github.com/<your-username>/visiontext-explainr](https://github.com/7206582513/VisionText-Explainr).git
-cd visiontext-explainr
-
-### 2. Create Virtual Environment
+git clone https://github.com/7206582513/VisionText-Explainr.git
+cd VisionText-Explainr
+2. Create Virtual Environment
+bash
+Copy
+Edit
 python -m venv venv
-venv\Scripts\activate     # Windows
-# OR
-source venv/bin/activate  # macOS/Linux
+Activate it:
 
-### 3. Install Requirements
+bash
+Copy
+Edit
+venv\Scripts\activate   # Windows
+or
+
+bash
+Copy
+Edit
+source venv/bin/activate   # macOS/Linux
+3. Install Requirements
+bash
+Copy
+Edit
 pip install -r requirements.txt
+4. Install Tesseract
+Download Tesseract for Windows: https://github.com/UB-Mannheim/tesseract/wiki
 
-### 4. Install Tesseract
-  Download Tesseract for Windows
-Make sure to set the tesseract_cmd path in app.py:
+Make sure to set the tesseract_cmd path inside app.py:
+
+python
+Copy
+Edit
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-
-### 🚀 Run the App
+🚀 Run the App
+bash
+Copy
+Edit
 python app.py
-Then visit:
+Visit in your browser:
+
 📍 http://127.0.0.1:5000/
 
-### 🔐 API Configuration
+🔐 API Configuration
 This app uses the Groq LLM API.
-Replace your API key in app.py:
+
+Replace your API key inside app.py:
+
+python
+Copy
+Edit
 GROQ_API_KEY = "your-api-key"
 GROQ_MODEL = "llama3-70b-8192"
-
-###📦 Tech Stack
+📦 Tech Stack
 Python + Flask
 
 OpenCV
@@ -61,10 +85,20 @@ Groq API
 
 Bootstrap 5
 
-### 📸 Screenshots
+📸 Screenshot
+(Add your screenshot link here)
 
-<img width="938" alt="image" src="https://github.com/user-attachments/assets/8d0fcfc2-44c7-4750-b1e1-7f7173b4c484" />
+Example:
 
-### 📜 License
+markdown
+Copy
+Edit
+<img width="938" alt="VisionText-Explainr Screenshot" src="https://your-screenshot-link.png" />
+📜 License
 MIT License – free to use and modify.
+
+yaml
+Copy
+Edit
+
 
