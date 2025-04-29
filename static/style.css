@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    color: #f0f0f0;
+}
+
+.heading {
+    font-weight: 600;
+    color: #00d9ff;
+    animation: fadeIn 2s ease;
+}
+
+.upload-form input[type="file"] {
+    background-color: #1c1c1c;
+    border: 2px dashed #00d9ff;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.upload-form .glow-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #00d9ff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.upload-form .glow-button:hover {
+    background-color: #00a6c1;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff;
+}
+
+.result-section {
+    margin-top: 50px;
+}
+
+.dark-card {
+    background-color: #1f1f1f;
+    border: 1px solid #00d9ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    color: #d1d1d1;
+    transition: all 0.5s;
+}
+
+.dark-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
